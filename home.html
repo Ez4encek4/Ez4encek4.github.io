@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Caíste en Phishing!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            text-align: center;
+            max-width: 600px;
+        }
+        
+        h1 {
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: shake 0.5s;
+        }
+        
+        p {
+            color: #333;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .gif-container {
+            margin: 30px 0;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .gif-container img {
+            max-width: 100%;
+            max-height: 100%;
+            border-radius: 10px;
+        }
+        
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            color: #856404;
+        }
+        
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        
+        button:hover {
+            background: #2980b9;
+        }
+        
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡🚨 ¡CAÍSTE EN PHISHING! 🚨</h1>
+        
+        <p>Acabas de ser víctima de una broma de phishing. ¡Felicidades, caíste! 😂</p>
+        
+        <div class="gif-container">
+            <img src="https://art.ngfiles.com/images/2387000/2387836_kevintrentin_vivi-gif.gif?f1646503627">
+        </div>
+        
+        <div class="warning">
+            <strong>⚠️ Lección importante:</strong><br>
+            Recuerda siempre verificar el remitente del correo que se te ha enviado, tambien los links de los botones que se encuentran en los cuerpos del correo, y nunca ingreses tus datos personales en sitios web a los que llegaste a través de enlaces sospechosos. Mantente alerta. 🛡 ️
+        </div>
+        
+        <p>
+            <strong>Pero tranquilo...</strong> Esta es solo una página de broma. 
+            No pasó nada malo.
+        </p>
+        
+        <button onclick="history.back()">Volver atrás</button>
+    </div>
+</body>
+</html>
